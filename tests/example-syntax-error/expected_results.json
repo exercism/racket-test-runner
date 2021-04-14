@@ -1,5 +1,5 @@
 {
   "version": 1,
   "status": "fail",
-  "output": "TODO: replace with correct output"
+  "output": "example-syntax-error.rkt:3:26: read: unexpected `)'\n  context...:\n   /usr/share/racket/collects/syntax/module-reader.rkt:185:17: body\n   /usr/share/racket/collects/syntax/module-reader.rkt:182:2: wrap-internal\n   /usr/share/racket/collects/racket/../syntax/module-reader.rkt:64:9: lang:read-syntax\n   standard-module-name-resolver"
 }

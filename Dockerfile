@@ -1,7 +1,10 @@
-FROM alpine:3.10
+FROM racket/racket:6.6-full
 
-# TODO: install packages required to run the tests
-# RUN apk add --no-cache coreutils
+RUN apt-get update && \
+    apt-get install -y jq && \
+    apt-get purge --auto-remove -y && \
+    apt-get clean && \
+    rm -rf /var/lib/apt/lists/*
 
 WORKDIR /opt/test-runner
 COPY . .
