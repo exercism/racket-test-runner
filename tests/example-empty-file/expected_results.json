@@ -1,5 +1,5 @@
 {
   "version": 1,
   "status": "fail",
-  "output": "TODO: replace with correct output"
+  "output": "default-load-handler: expected a `module' declaration;\n found end-of-file\n  in: 'example-empty-file\n  context...:\n   standard-module-name-resolver\n   standard-module-name-resolver\n   /usr/share/racket/pkgs/compiler-lib/compiler/commands/test.rkt:542:0: test-files73\n   /usr/share/racket/pkgs/compiler-lib/compiler/commands/test.rkt:427:0: map/parallel45\n   ...cket/cmdline.rkt:179:51\n   /usr/share/racket/pkgs/compiler-lib/compiler/commands/test.rkt: [running body]\n   /usr/share/racket/collects/raco/raco.rkt: [running body]\n   /usr/share/racket/collects/raco/main.rkt: [running body]"
 }
