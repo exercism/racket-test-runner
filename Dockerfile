@@ -1,4 +1,4 @@
-FROM racket/racket:6.6-full
+FROM racket/racket:8.2-full
 
 RUN apt-get update && \
     apt-get install -y jq && \
