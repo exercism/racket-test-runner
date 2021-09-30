@@ -1,5 +1,5 @@
 {
   "version": 1,
   "status": "fail",
-  "message": "example-syntax-error.rkt:3:26: read: unexpected `)'\n  context...:\n   /usr/share/racket/collects/syntax/module-reader.rkt:185:17: body\n   /usr/share/racket/collects/syntax/module-reader.rkt:182:2: wrap-internal\n   /usr/share/racket/collects/racket/../syntax/module-reader.rkt:64:9: lang:read-syntax\n   standard-module-name-resolver"
+  "message": "example-syntax-error.rkt:3:26: read-syntax: unexpected `)`\n  context...:\n   /usr/share/racket/collects/syntax/module-reader.rkt:186:17: body\n   /usr/share/racket/collects/syntax/module-reader.rkt:183:2: wrap-internal\n   /usr/share/racket/collects/racket/../syntax/module-reader.rkt:67:9: wrap-internal/wrapper\n   /usr/share/racket/pkgs/compiler-lib/compiler/commands/test.rkt:383:27\n   /usr/share/racket/pkgs/compiler-lib/compiler/commands/test.rkt:385:0: call-with-summary\n   .../private/map.rkt:40:19: loop\n   /usr/share/racket/pkgs/compiler-lib/compiler/commands/test.rkt:1113:1: test\n   body of \"/usr/share/racket/pkgs/compiler-lib/compiler/commands/test.rkt\"\n   /usr/share/racket/collects/raco/raco.rkt:41:0\n   body of \"/usr/share/racket/collects/raco/raco.rkt\"\n   body of \"/usr/share/racket/collects/raco/main.rkt\""
 }
