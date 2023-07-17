@@ -1,10 +1,7 @@
-FROM racket/racket:8.9-full
+FROM racket/racket:8.9-bc
 
-RUN apt-get update && \
-    apt-get install -y jq && \
-    apt-get purge --auto-remove -y && \
-    apt-get clean && \
-    rm -rf /var/lib/apt/lists/*
+RUN apt-get install -y jq
+RUN raco pkg install zo-lib testing-util-lib rackunit-lib scheme-lib compiler-lib
 
 WORKDIR /opt/test-runner
 COPY . .
