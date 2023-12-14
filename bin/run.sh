@@ -47,11 +47,13 @@ if [ $exit_code -eq 0 ]; then
     jq -n '{version: 1, status: "pass"}' > ${results_file}
 else
     # Manually add colors to the output to help scanning the output for errors
-    colorized_test_output=$(echo "${test_output}" \
-         | GREP_COLORS='mt=01;31' grep --color=always -E -e '[0-9]+ (error|failure)\(s\)|$' -e '^FAILURE.*$|$' \
-         | GREP_COLORS='mt=01;32' grep --color=always -E -e '[0-9]+ success\(es\)|$')
+    # colorized_test_output=$(echo "${test_output}" \
+    #     | GREP_COLORS='mt=01;31' grep --color=always -E -e '[0-9]+ (error|failure)\(s\)|$' -e '^FAILURE.*$|$' \
+    #     | GREP_COLORS='mt=01;32' grep --color=always -E -e '[0-9]+ success\(es\)|$')
 
-    jq -n --arg output "${test_output}" '{version: 1, status: "fail", message: $output}' > ${results_file}
+    sanitized_test_output=$(echo "${test_output}" | sed 's|/root/.local/share/racket/[^/]*/||')
+
+    jq -n --arg output "${sanitized_test_output}" '{version: 1, status: "fail", message: $output}' > ${results_file}
 fi
 
 echo "${slug}: done"

@@ -1,4 +1,4 @@
-FROM racket/racket:8.10-bc
+FROM racket/racket:8.11
 
 RUN apt-get install -y jq
 RUN raco pkg install zo-lib testing-util-lib rackunit-lib scheme-lib compiler-lib
