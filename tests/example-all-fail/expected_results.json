@@ -1,5 +1,5 @@
 {
   "version": 1,
   "status": "fail",
-  "message": "raco test: (submod \"/opt/test-runner/tests/example-all-fail/example-all-fail-test.rkt\" test)\n--------------------\nleap tests > vanilla-leap-year\nFAILURE\nname:       check-eqv?\nlocation:   example-all-fail-test.rkt:12:5\nactual:     #f\nexpected:   #t\n--------------------\n--------------------\nleap tests > any-old-year\nFAILURE\nname:       check-eqv?\nlocation:   example-all-fail-test.rkt:13:5\nactual:     #t\nexpected:   #f\n--------------------\n0 success(es) 2 failure(s) 0 error(s) 2 test(s) run\n2/2 test failures\n2"
+  "message": "raco test: (submod (file \"/opt/test-runner/tests/example-all-fail/example-all-fail-test.rkt\") test)\n--------------------\nleap tests > vanilla-leap-year\nFAILURE\nname:       check-eqv?\nlocation:   example-all-fail-test.rkt:12:5\nactual:     #f\nexpected:   #t\n--------------------\n--------------------\nleap tests > any-old-year\nFAILURE\nname:       check-eqv?\nlocation:   example-all-fail-test.rkt:13:5\nactual:     #t\nexpected:   #f\n--------------------\n0 success(es) 2 failure(s) 0 error(s) 2 test(s) run\n2/2 test failures\n2"
 }

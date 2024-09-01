@@ -1,5 +1,5 @@
 {
   "version": 1,
   "status": "fail",
-  "message": "raco test: (submod \"/opt/test-runner/tests/example-partial-fail/example-partial-fail-test.rkt\" test)\n--------------------\nleap tests > exceptional-century\nFAILURE\nname:       check-eqv?\nlocation:   example-partial-fail-test.rkt:17:5\nactual:     #f\nexpected:   #t\n--------------------\n5 success(es) 1 failure(s) 0 error(s) 6 test(s) run\n1/6 test failures\n1"
+  "message": "raco test: (submod (file \"/opt/test-runner/tests/example-partial-fail/example-partial-fail-test.rkt\") test)\n--------------------\nleap tests > exceptional-century\nFAILURE\nname:       check-eqv?\nlocation:   example-partial-fail-test.rkt:17:5\nactual:     #f\nexpected:   #t\n--------------------\n5 success(es) 1 failure(s) 0 error(s) 6 test(s) run\n1/6 test failures\n1"
 }
