@@ -1,5 +1,5 @@
 {
   "version": 1,
   "status": "fail",
-  "message": "default-load-handler: expected a `module' declaration;\n found end-of-file\n  in: #<path:/opt/test-runner/tests/example-empty-file/example-empty-file.rkt>\n  context...:\n   pkgs/compiler-lib/compiler/commands/test.rkt:417:27\n   pkgs/compiler-lib/compiler/commands/test.rkt:419:0: call-with-summary\n   .../private/map.rkt:40:19: loop\n   pkgs/compiler-lib/compiler/commands/test.rkt:1154:1: test\n   body of \"pkgs/compiler-lib/compiler/commands/test.rkt\"\n   /usr/share/racket/collects/raco/raco.rkt:41:0\n   body of \"/usr/share/racket/collects/raco/raco.rkt\"\n   body of \"/usr/share/racket/collects/raco/main.rkt\""
+  "message": "default-load-handler: expected a `module' declaration;\n found end-of-file\n  in: #<path:/opt/test-runner/tests/example-empty-file/example-empty-file.rkt>\n  context...:\n   pkgs/compiler-lib/compiler/commands/test.rkt:428:27\n   pkgs/compiler-lib/compiler/commands/test.rkt:430:0: call-with-summary\n   .../private/map.rkt:40:19: loop\n   pkgs/compiler-lib/compiler/commands/test.rkt:1165:1: test\n   body of \"pkgs/compiler-lib/compiler/commands/test.rkt\"\n   /usr/share/racket/collects/raco/raco.rkt:41:0\n   body of \"/usr/share/racket/collects/raco/raco.rkt\"\n   body of \"/usr/share/racket/collects/raco/main.rkt\""
 }
