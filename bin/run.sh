@@ -51,7 +51,7 @@ else
     #     | GREP_COLORS='mt=01;31' grep --color=always -E -e '[0-9]+ (error|failure)\(s\)|$' -e '^FAILURE.*$|$' \
     #     | GREP_COLORS='mt=01;32' grep --color=always -E -e '[0-9]+ success\(es\)|$')
 
-    sanitized_test_output=$(echo "${test_output}" | sed 's|/root/.local/share/racket/[^/]*/||')
+    sanitized_test_output=$(echo "${test_output}" | sed 's|/usr/share/racket/pkgs/|pkgs/|')
 
     jq -n --arg output "${sanitized_test_output}" '{version: 1, status: "fail", message: $output}' > ${results_file}
 fi
