@@ -1,4 +1,4 @@
-FROM debian:trixie-slim@sha256:109e2c65005bf160609e4ba6acf7783752f8502ad218e298253428690b9eaa4b AS builder
+FROM debian:trixie-slim@sha256:a29215f6a35e51e22adffa17f89e9d2ef06214e64a2bad10d765c46aea49f11f AS builder
 
 # Install full distribution, remove offline documentation, and remove GUI launcher
 ADD https://download.racket-lang.org/releases/9.3/installers/racket-9.3-x86_64-linux-buster-cs.sh /tmp/racket-install.sh
@@ -8,7 +8,7 @@ RUN sh /tmp/racket-install.sh --create-dir --unix-style --dest /usr/ \
  && find /usr/share/racket/pkgs -maxdepth 1 -type d -name '*-doc' -exec rm -rf {} + \
  && find /usr/lib/racket/compiled -type d -path '*/pkgs/*-doc' -prune -exec rm -rf {} +
 
-FROM debian:trixie-slim@sha256:109e2c65005bf160609e4ba6acf7783752f8502ad218e298253428690b9eaa4b AS runner
+FROM debian:trixie-slim@sha256:a29215f6a35e51e22adffa17f89e9d2ef06214e64a2bad10d765c46aea49f11f AS runner
 
 RUN apt-get update \
  && apt-get install --yes --no-install-recommends jq \
